@@ -1,5 +1,8 @@
 # javascript-group1
 
+Score : 1 point
+You don't have a main.js file to call funcions from your individual files and only the work from person one is included in the index.html file. see index.js for more comments
+
 Create an English to Spanish dictionary. Provide the options below:
 ```
 Press 1 to list all English to Spanish translations, press 2 to list all Spanish to English translations, press 3 to enter a new English translation, press 4 to enter a new Spanish translation, and press 5 or 'q' to quit.
