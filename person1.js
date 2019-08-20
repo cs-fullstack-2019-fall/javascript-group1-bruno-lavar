@@ -7,9 +7,9 @@
 // press 4 to enter a new Spanish translation, and press
 // 5 or 'q' to quit.
 
-class Translate {
-  constuctor(english, spanish){
-    this.english = english;
+class Translate{
+  constructor(english, spanish){
+    this.name = english;
     this.spanish = spanish;
   }
 }
@@ -44,6 +44,8 @@ function translate (){
     let spanishArray = ['Hola', 'Adios', 'Buenosdias', 'Buenasnoches'];
     let newArray = [];
     let newArray2 = [];
+
+
     for(let i = 0; i < spanishArray.length; i++)
     {
         let instanceOfTranslate = new Translate(spanishArray[i]);
@@ -56,16 +58,16 @@ function translate (){
         newArray2.push(instanceOfEnglish);
     }
     console.log(newArray2);
-
-    let newString = "";
-    newArray.forEach
-    (
-      function(eachElement)
-      {
-        newString = newString + eachElement.english;
-        console.log(newString);
-      }
-    )
+    //
+    // let newString = "";
+    // newArray.forEach
+    // (
+    //   function(eachElement)
+    //   {
+    //     newString = newString + eachElement.english;
+    //     console.log(newString);
+    //   }
+    // )
 
 }
 
@@ -74,7 +76,7 @@ main();
 // function english_to_spanish() {
 //
 // }
-//
+
 // function spanish_to_english() {
 //
 // }
