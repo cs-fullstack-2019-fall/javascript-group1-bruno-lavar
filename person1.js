@@ -30,7 +30,7 @@ function main() {
         translate();
         break;
       case "3":
-        alert("You hit 3");
+        english_to_spanish();
         break;
       case "4":
         alert("You hit 4");
@@ -41,17 +41,11 @@ function main() {
 
 function translate (){
     let englishArray = ['Hello', 'Goodbye','Goodmorning','Goodnight'];
-    let spanishArray = ['Hola', 'Adios', 'Buenosdias', 'Buenasnoches'];
-    let newArray = [];
+
     let newArray2 = [];
 
 
-    for(let i = 0; i < spanishArray.length; i++)
-    {
-        let instanceOfTranslate = new Translate(spanishArray[i]);
-        newArray.push(instanceOfTranslate);
-    }
-    console.log(newArray);
+
     for(let x = 0; x < englishArray.length; x++)
     {
         let instanceOfEnglish = new Translate(englishArray[x]);
@@ -73,9 +67,16 @@ function translate (){
 
 main();
 
-// function english_to_spanish() {
-//
-// }
+function english_to_spanish() {
+  let spanishArray = ['Hola', 'Adios', 'Buenosdias', 'Buenasnoches'];
+  let newArray = [];
+  for(let i = 0; i < spanishArray.length; i++)
+  {
+      let instanceOfTranslate = new Translate(spanishArray[i]);
+      newArray.push(instanceOfTranslate);
+  }
+  console.log(newArray);
+}
 
 // function spanish_to_english() {
 //
