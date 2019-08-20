@@ -1,4 +1,4 @@
-alert("Test it bruh");
+// alert("Test it bruh");
 
 
 // Press 1 to list all English to Spanish translations,
@@ -18,10 +18,7 @@ let user_choice;
 
 function main() {
   while(user_choice !== "q") {
-    user_choice = prompt(
-      "Enter a number 1-4 or 'q' to quit"
-    );
-
+    user_choice = prompt("Enter a number 1-4 or 'q' to quit");
     switch (user_choice) {
       case "q":
         alert("you quit the program");
@@ -30,7 +27,7 @@ function main() {
         prompt("Enter english word");
         break;
       case "2":
-        alert("You hit 2");
+        translate();
         break;
       case "3":
         alert("You hit 3");
@@ -42,21 +39,42 @@ function main() {
   }
 }
 
-// function english() {
-//   user_input = prompt("Enter a english word to ")
-//
-//   switch (user_input) {
-//     case:
-//   }
-// }
+function translate (){
+    let englishArray = ['Hello', 'Goodbye','Goodmorning','Goodnight'];
+    let spanishArray = ['Hola', 'Adios', 'Buenosdias', 'Buenasnoches'];
+    let newArray = [];
+    let newArray2 = [];
+    for(let i = 0; i < spanishArray.length; i++)
+    {
+        let instanceOfTranslate = new Translate(spanishArray[i]);
+        newArray.push(instanceOfTranslate);
+    }
+    console.log(newArray);
+    for(let x = 0; x < englishArray.length; x++)
+    {
+        let instanceOfEnglish = new Translate(englishArray[x]);
+        newArray2.push(instanceOfEnglish);
+    }
+    console.log(newArray2);
+
+    let newString = "";
+    newArray.forEach
+    (
+      function(eachElement)
+      {
+        newString = newString + eachElement.english;
+        console.log(newString);
+      }
+    )
+
+}
 
 main();
 
-
-function english_to_spanish() {
-
-}
-
-function spanish_to_english() {
-
-}
+// function english_to_spanish() {
+//
+// }
+//
+// function spanish_to_english() {
+//
+// }
